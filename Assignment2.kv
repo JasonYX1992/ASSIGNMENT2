@@ -1,0 +1,79 @@
+<MenuScreen>:
+
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: root.List_Required
+            pos: 0, 0
+            background_color: root.Label_background_color
+            on_release: root.func1()
+            
+        Button:
+            text: root.List_completed
+            pos: 0, 0
+            on_release: root.func2()
+            
+        Button:
+            text: root.Add_new_item
+            pos: 0, 0
+            background_color: root.Label_background_color
+        TextInput:
+            id: new_item
+
+        Button:
+            text: root.Price
+            pos: 0, 0
+            background_color: root.Label_background_color
+        TextInput:
+            id: pricex
+            
+        Button:
+            text: root.Priority
+            pos: 0, 0
+            background_color: root.Label_background_color
+        TextInput:
+            id: priorityx
+
+        Button:
+            text: root.Add_Item
+            pos: 0, 0
+            on_release: root.func3()
+
+        Button:
+            text: root.Clear
+            pos: 0, 0
+            on_release: root.func4()
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            height: 30
+            size_hint: (1, None)
+            Button:
+                id: time0
+                color: root.Label_color
+                background_color: root.Label_background_color4
+
+        Button:
+            id: time1
+            color: root.Label_color
+            background_color: root.Label_background_color1
+        Button:
+            id: time2
+            color: root.Label_color
+            background_color: root.Label_background_color2
+        Button:
+            id: time3
+            color: root.Label_color
+            background_color: root.Label_background_color3
+
+        BoxLayout:
+            orientation: 'horizontal'
+            height: 30
+            size_hint: (1, None)
+            Button:
+                id: time4
+                color: root.Label_color
+                background_color: root.Label_background_color4
